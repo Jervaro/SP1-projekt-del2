@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 9b4438745cc75a840ac7c707106e42a0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_25
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 80
+        width: 4
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11f3d458f3d1f74888fd3fe85b9ac58
+      internalID: -324795116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_26
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 80
+        width: 7
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da7d446c51cd4c47a550d2c14ee1691
+      internalID: -1853320996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_27
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 80
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c8ed711873f6846bb736ccb8a6abcc
+      internalID: -468109492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_28
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 80
+        width: 11
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a571b07b035144f8dc6fbe01487cd4
+      internalID: 1835435400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 80
+        width: 9
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0c671da499cc5478fc92c660d54281
+      internalID: -905112175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_30
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 80
+        width: 7
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c239c4b3d489b45b6095c2270741f5
+      internalID: 2109179962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_31
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 80
+        width: 4
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9847ee05b2e61fb46b3ae8faa825b648
+      internalID: -2125654774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KenneyAnimatedCoinsV3_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 135
+        width: 19
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f340c5b8dc491f543a40deb59906d82f
+      internalID: 210341432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KenneyAnimatedCoinsV3_29: -905112175
+      KenneyAnimatedCoinsV3_39: 1663723226
+      KenneyAnimatedCoinsV3_2: 1494595404
+      KenneyAnimatedCoinsV3_31: -2125654774
+      KenneyAnimatedCoinsV3_40: -1361892114
+      KenneyAnimatedCoinsV3_17: 191867862
+      KenneyAnimatedCoinsV3_23: 957181372
+      KenneyAnimatedCoinsV3_21: 615976148
+      KenneyAnimatedCoinsV3_9: 1559641501
+      KenneyAnimatedCoinsV3_30: 2109179962
+      KenneyAnimatedCoinsV3_28: 1835435400
+      KenneyAnimatedCoinsV3_10: 2045700435
+      KenneyAnimatedCoinsV3_4: 683416374
+      KenneyAnimatedCoinsV3_44: -1075822964
+      KenneyAnimatedCoinsV3_20: 813258948
+      KenneyAnimatedCoinsV3_18: 1763431264
+      KenneyAnimatedCoinsV3_26: -1853320996
+      KenneyAnimatedCoinsV3_0: 210341432
+      KenneyAnimatedCoinsV3_36: -1815607548
+      KenneyAnimatedCoinsV3_22: -1560405969
+      KenneyAnimatedCoinsV3_42: 570142132
+      KenneyAnimatedCoinsV3_35: 648191825
+      KenneyAnimatedCoinsV3_7: -186805208
+      KenneyAnimatedCoinsV3_38: -434040408
+      KenneyAnimatedCoinsV3_27: -468109492
+      KenneyAnimatedCoinsV3_34: -1077267838
+      KenneyAnimatedCoinsV3_24: -1763095869
+      KenneyAnimatedCoinsV3_43: -653851440
+      KenneyAnimatedCoinsV3_37: 2054938491
+      KenneyAnimatedCoinsV3_33: 1311252829
+      KenneyAnimatedCoinsV3_13: 1435553186
+      KenneyAnimatedCoinsV3_16: 623851945
+      KenneyAnimatedCoinsV3_41: 691740422
+      KenneyAnimatedCoinsV3_32: -1928218037
+      KenneyAnimatedCoinsV3_1: 1798937452
+      KenneyAnimatedCoinsV3_6: 1301620401
+      KenneyAnimatedCoinsV3_11: 540932025
+      KenneyAnimatedCoinsV3_19: 1731264801
+      KenneyAnimatedCoinsV3_3: -2140776822
+      KenneyAnimatedCoinsV3_14: -430391237
+      KenneyAnimatedCoinsV3_15: 941484988
+      KenneyAnimatedCoinsV3_5: -1188384211
+      KenneyAnimatedCoinsV3_8: -1388247126
+      KenneyAnimatedCoinsV3_25: -324795116
+      KenneyAnimatedCoinsV3_12: -507989080
+      KenneyAnimatedCoinsV3_45: 756554501
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
