@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) == true)
+        if (Input.GetKeyDown(KeyCode.W) == true)
         {
             isJumpPressed = true;
             animator.SetTrigger("DoJump");
@@ -110,7 +110,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FlipSpriteDirection()
     {
-        spriteRenderer.flipX = !isFacingLeft;
+        // spriteRenderer.flipX = !isFacingLeft;
+        transform.Rotate(0f, 180f, 0f);
         isFacingLeft = !isFacingLeft;
     }
 
