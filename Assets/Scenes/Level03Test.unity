@@ -381,7 +381,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4493956420305364983, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
   m_PrefabInstance: {fileID: 4493956420377753987}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552540868}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea42e8df4f9300d49afd873d31bdebc5, type: 3}
@@ -1595,11 +1595,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!4 &672173596 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 672173596, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-  m_PrefabInstance: {fileID: 4493956420377753987}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &677428143
 GameObject:
   m_ObjectHideFlags: 0
@@ -15019,26 +15014,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5130097466527227224, guid: 84752cb66007ab54ebbadb885a98cae6, type: 3}
   m_PrefabInstance: {fileID: 5130097466859092719}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1552540868 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4493956420305364974, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-  m_PrefabInstance: {fileID: 4493956420377753987}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1552540877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552540868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea536d5d0dcf404b9205cf00e01b272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 672173596}
-  bulletPrefab: {fileID: 3266380600519652443, guid: e16118a68dcc4a44e9c03cec11806843, type: 3}
-  timeBeforeReset: 0.2
 --- !u!1 &1581508524
 GameObject:
   m_ObjectHideFlags: 0
@@ -15490,18 +15465,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 672173596, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 672173596, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 672173596, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4493956418740590378, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: m_Enabled
       value: 0
