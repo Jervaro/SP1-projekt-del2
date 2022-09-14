@@ -30,6 +30,17 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private LayerMask whatIsGround;
 
+    public float checkRadius;
+    bool isTouchingFront;
+    public Transform frontCheck;
+    bool wallSliding;
+    public float wallSlidingSpeed;
+
+    bool wallJumping;
+    public float xWallForce;
+    public float yWallForce;
+    public float wallJumpTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,24 +55,54 @@ public class PlayerMovement : MonoBehaviour
     {
         moveDirection = Input.GetAxis("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) == true)
+        if (Input.GetKeyDown(KeyCode.W) == true)
         {
             isJumpPressed = true;
             animator.SetTrigger("DoJump");
-            if(isGrounded == true)
+            if (isGrounded == true)
             {
                 audioSource.PlayOneShot(audioClip);
             }
-            
+
         }
 
+        // start of wallsliding/walljumping
+        isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, checkRadius, whatIsGround);
+
+        if (isTouchingFront == true && isGrounded == false && moveDirection != 0)
+        {
+            wallSliding = true;
+
+        }
+        else
+        {
+            wallSliding = false;
+        }
+
+        if (wallSliding)
+        {
+            rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, Mathf.Clamp(rigidBody2D.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) && wallSliding == true)
+        {
+            wallJumping = true;
+            Invoke("setWallJumpingToFalse", wallJumpTime);
+        }
+
+        if (wallJumping == true)
+        {
+            rigidBody2D.velocity = new Vector2(xWallForce * -moveDirection, yWallForce);
+        }
+        // end of walljumping/wallsliding
+        
         animator.SetBool("IsGrounded", isGrounded);
         animator.SetFloat("Speed", Mathf.Abs(moveDirection));
 
     }
 
     // Start of FixedUpdate method
-    private void FixedUpdate() 
+    private void FixedUpdate()
     {
         isGrounded = false;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.transform.position, 0.1f, whatIsGround);
@@ -77,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 calculatedMovement = Vector3.zero;
         float verticalVelocity = 0f;
 
-        if (isGrounded == false) 
+        if (isGrounded == false)
         {
             verticalVelocity = rigidBody2D.velocity.y;
         }
@@ -86,37 +127,36 @@ public class PlayerMovement : MonoBehaviour
         calculatedMovement.y = verticalVelocity;
         Move(calculatedMovement, isJumpPressed);
         isJumpPressed = false;
+
+      
+
     }
 
     private void Move(Vector3 moveDirection, bool isJumpPressed)
     {
         rigidBody2D.velocity = Vector3.SmoothDamp(rigidBody2D.velocity, moveDirection, ref velocity, smoothTime);
 
-        if(isJumpPressed == true && isGrounded == true)
+        if (isJumpPressed == true && isGrounded == true)
         {
             rigidBody2D.AddForce(new Vector2(0f, jumpForce * 100f));
         }
 
-        if (moveDirection.x > 0f && isFacingLeft == true)
+        if (moveDirection.x > 0 && isFacingLeft)
         {
-            FlipSpriteDirection();
+            Flip();
         }
-        else if (moveDirection.x < 0f && isFacingLeft == false)
+        else if (moveDirection.x < 0 && !isFacingLeft)
         {
-            FlipSpriteDirection();
+            Flip();
         }
 
     }// End of Move method
 
-    private void FlipSpriteDirection()
-    {
-        spriteRenderer.flipX = !isFacingLeft;
-        isFacingLeft = !isFacingLeft;
-    }
+
 
     public bool isFalling()
     {
-        if(rigidBody2D.velocity.y < -1f)
+        if (rigidBody2D.velocity.y < -1f)
         {
             return true;
         }
@@ -133,4 +173,19 @@ public class PlayerMovement : MonoBehaviour
         movementSpeed *= multiplyBy;
     }
 
+    void Flip()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+        isFacingLeft = !isFacingLeft;
+    }
+
+   private void setWallJumpingToFalse() 
+    {
+        wallJumping = false;
+    }
+
 } // End of class
+
+
