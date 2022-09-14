@@ -152,7 +152,12 @@ public class PlayerMovement : MonoBehaviour
 
     }// End of Move method
 
-
+    private void FlipSpriteDirection()
+    {
+        // spriteRenderer.flipX = !isFacingLeft;
+        transform.Rotate(0f, 180f, 0f);
+        isFacingLeft = !isFacingLeft;
+    }
 
     public bool isFalling()
     {
