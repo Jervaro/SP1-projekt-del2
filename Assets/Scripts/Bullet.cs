@@ -22,9 +22,10 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
-        if(collision.CompareTag("Ground") == true)
-        {
-            Destroy(gameObject);
-        }
+    }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

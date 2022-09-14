@@ -6,14 +6,20 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    private bool canFire = true;
+
     [SerializeField] private float timeBeforeReset;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private float volume;
+
+    private bool canFire = true;
     private float timer = 0f;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1") && canFire == true)
+        audioSource.volume = volume;
+        if (Input.GetButtonDown("Fire1") && canFire == true)
         {
             Shoot();
         }
@@ -33,6 +39,7 @@ public class Weapon : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         canFire = false;
+        audioSource.PlayOneShot(audioClip);
     }
     
 }
