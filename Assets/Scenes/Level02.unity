@@ -38286,14 +38286,6 @@ PrefabInstance:
       propertyPath: isQuestComplete
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4493956418740590377, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.182
-      objectReference: {fileID: 0}
-    - target: {fileID: 4493956418740590378, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364972, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -38348,11 +38340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364976, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: m_Size.y
-      value: 1.2347528
+      value: 1.3073661
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364976, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: m_Offset.y
-      value: 0.71119505
+      value: 0.6748884
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: frontCheck
