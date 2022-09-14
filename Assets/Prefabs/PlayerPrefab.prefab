@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &672173595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672173596}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672173596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672173595}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.76, y: 0.84999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 4493956420305364972}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4493956418740590379
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4493956418740590379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.008, y: 0.05, z: 0}
+  m_LocalPosition: {x: 0.008, y: 0.136, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101,6 +132,7 @@ GameObject:
   - component: {fileID: 4493956420305364977}
   - component: {fileID: 4493956420305364983}
   - component: {fileID: 1522008851}
+  - component: {fileID: 1552540877}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -121,6 +153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4493956418740590377}
+  - {fileID: 672173596}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -165,7 +198,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 1697760189, guid: 1745a5878a793f24693d03be307543b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d692dcc7ef4854bb0b35411f364a7914, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -210,8 +243,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.6866393}
-  m_Size: {x: 0.91905236, y: 1.2838643}
+  m_Offset: {x: 0, y: 0.724311}
+  m_Size: {x: 0.91905236, y: 1.2085209}
   m_Direction: 0
 --- !u!95 &4493956420305364982
 Animator:
@@ -344,7 +377,7 @@ MonoBehaviour:
   audioSource: {fileID: 1125949190166511247}
   audioClip: {fileID: 8300000, guid: 97296b9a97ac2024e9771c638d91bc1e, type: 3}
   groundCheck: {fileID: 4493956418740590379}
-  movementSpeed: 4
+  movementSpeed: 6
   jumpForce: 6
   smoothTime: 0.05
   whatIsGround:
@@ -380,3 +413,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuestComplete: 0
+--- !u!114 &1552540877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493956420305364974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea536d5d0dcf404b9205cf00e01b272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 672173596}
+  bulletPrefab: {fileID: 3266380600519652443, guid: e16118a68dcc4a44e9c03cec11806843, type: 3}
+  timeBeforeReset: 0.2
