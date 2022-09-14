@@ -15531,7 +15531,7 @@ PrefabInstance:
     - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: a4b5569e334bf8f47bbfcdb8c8f37cd1, type: 3}
+      objectReference: {fileID: 8300000, guid: 6f8852211af935c408a2b7cf7a82e034, type: 3}
     - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: audioSource
       value: 
@@ -15588,6 +15588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f84cc88ace8ba84b85cfd2ae41566a7, type: 3}
     - target: {fileID: 4493956420305364983, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: startPosition
       value: 
