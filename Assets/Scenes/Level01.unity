@@ -6877,7 +6877,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7281,11 +7281,11 @@ PrefabInstance:
       objectReference: {fileID: 1321455584}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: xWallForce
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: yWallForce
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: checkRadius
@@ -7293,7 +7293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: wallJumpTime
-      value: 0.5
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: wallSlidingSpeed
@@ -24201,7 +24201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321455583}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.65, y: 0.59, z: 0.04542362}
+  m_LocalPosition: {x: 0.46, y: 0.59, z: 0.04542362}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
