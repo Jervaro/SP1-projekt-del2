@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    
     public int health = 100;
+    public bool isHurt = false;
 
     // public GameObject deathEffect;
 
@@ -13,9 +15,16 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        isHurt = true;
         if (health <= 0)
         {
             enemySlimeMovement.KillMe();
         }
     }
+
+    private void Update()
+    {
+
+    }
+    
 }

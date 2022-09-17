@@ -84,10 +84,12 @@ public class Enemy_SlimeMovement : MonoBehaviour
     public void KillMe()
     {
         isAlive = false;
+        /*
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         Vector2 killForce = new Vector2(movementDirection, 4f);
         rigidBody2D.AddForce(killForce, ForceMode2D.Impulse);
         gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, -gameObject.transform.localScale.y);
+        */
     }
 
 }

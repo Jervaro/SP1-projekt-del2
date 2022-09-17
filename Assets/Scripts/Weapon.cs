@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    private Animator animator;
 
     [SerializeField] private float timeBeforeReset;
     [SerializeField] private AudioSource audioSource;
@@ -14,14 +15,23 @@ public class Weapon : MonoBehaviour
 
     private bool canFire = true;
     private float timer = 0f;
+    private bool isShooting = false;
+
+    void Start()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("IsShooting", isShooting);
+
         audioSource.volume = volume;
         if (Input.GetButtonDown("Fire1") && canFire == true)
         {
             Shoot();
+            isShooting = true;
         }
 
         if (canFire == false)
