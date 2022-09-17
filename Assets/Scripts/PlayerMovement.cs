@@ -178,14 +178,8 @@ public class PlayerMovement : MonoBehaviour
         movementSpeed *= multiplyBy;
     }
 
-    /*void Flip()
-    {
-        Vector3 currentScale = gameObject.transform.localScale;
-        currentScale.x *= -1;
-        gameObject.transform.localScale = currentScale;
-        isFacingLeft = !isFacingLeft;
-    }
-    */
+  
+    
    private void setWallJumpingToFalse() 
     {
         wallJumping = false;

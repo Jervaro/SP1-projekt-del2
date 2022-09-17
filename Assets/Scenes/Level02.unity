@@ -38286,6 +38286,14 @@ PrefabInstance:
       propertyPath: isQuestComplete
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a4b5569e334bf8f47bbfcdb8c8f37cd1, type: 3}
+    - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 4493956420377753989}
     - target: {fileID: 4493956418740590377, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.182
@@ -38399,6 +38407,11 @@ PrefabInstance:
 --- !u!4 &4493956420377753988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4493956420305364972, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+  m_PrefabInstance: {fileID: 4493956420377753987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &4493956420377753989 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1125949190166511247, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
   m_PrefabInstance: {fileID: 4493956420377753987}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5509334208788676218
