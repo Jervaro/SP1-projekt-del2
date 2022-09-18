@@ -102111,6 +102111,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8056298421897526074, guid: d0743ea0ea2ce0e4f82f0eb9890f5588, type: 3}
+      propertyPath: m_Text
+      value: 'Move Left: A
+
+        Move Right: D
+
+        Jump: W
+
+        Shoot:
+        Space
+
+        Respawn: R
+
+        Exit to mainmenu: ESC'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0743ea0ea2ce0e4f82f0eb9890f5588, type: 3}
 --- !u!1 &1826664326
