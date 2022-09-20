@@ -67,10 +67,14 @@ public class Enemy_SlimeMovement : MonoBehaviour
 
     private void ChangeDirection()
     {
+        
         movementDirection = -movementDirection;
+        /*
         Vector3 newScale = gameObject.transform.localScale;
         newScale.x = movementDirection;
         gameObject.transform.localScale = newScale;
+        */
+        transform.Rotate(0f, 180f, 0f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

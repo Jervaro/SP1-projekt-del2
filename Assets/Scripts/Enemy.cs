@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
+    public GameObject player;
 
     // public GameObject deathEffect;
 
@@ -16,6 +17,8 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             enemySlimeMovement.KillMe();
+            player.GetComponent<GameObserver>().amountSlimesKilled++;
+
         }
     }
 }
