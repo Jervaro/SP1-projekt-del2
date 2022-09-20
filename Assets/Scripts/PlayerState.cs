@@ -33,11 +33,6 @@ public class PlayerState : MonoBehaviour
         {
             Respawn();
         }
-        
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }
     }
 
 
