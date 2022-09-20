@@ -51526,7 +51526,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 23.42057, y: 0.37188458}
+  m_Offset: {x: 23.42057, y: 0.3718611}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -51537,7 +51537,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0245056, y: 3.7539563}
+  m_Size: {x: 1.0245056, y: 3.7540066}
   m_EdgeRadius: 0
 --- !u!61 &508983504
 BoxCollider2D:
@@ -52467,11 +52467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8363ab4ac8b619844b5d7816969b998a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &948445244 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1321455584, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
-  m_PrefabInstance: {fileID: 1506199845}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &952431141
 GameObject:
   m_ObjectHideFlags: 0
@@ -52890,6 +52885,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1005203324 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 355283226, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+  m_PrefabInstance: {fileID: 1506199845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1010096632
 GameObject:
   m_ObjectHideFlags: 0
@@ -99088,6 +99088,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7091771779387388513, guid: bd3e545ebb867c7499b440759f40d3e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091771779801927737, guid: bd3e545ebb867c7499b440759f40d3e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091771779814853345, guid: bd3e545ebb867c7499b440759f40d3e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7091771780169392176, guid: bd3e545ebb867c7499b440759f40d3e3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7091771780729674448, guid: bd3e545ebb867c7499b440759f40d3e3, type: 3}
       propertyPath: levelToLoad
       value: 2
@@ -99438,7 +99454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991749489591808480, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2991749489591808482, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
       propertyPath: m_RootOrder
@@ -99446,7 +99462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2991749489591808482, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.87
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 2991749489591808482, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -99487,6 +99503,10 @@ PrefabInstance:
     - target: {fileID: 2991749489591808483, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
       propertyPath: questBeginText
       value: Collect all the coins!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808483, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
+      propertyPath: amountToCollect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2991749489591808483, guid: 1a2ea4f995a52444e99d936f3ad934e6, type: 3}
       propertyPath: questCompleteText
@@ -104949,6 +104969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 355283226, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.87
+      objectReference: {fileID: 0}
     - target: {fileID: 1321455584, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -105024,7 +105048,7 @@ PrefabInstance:
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: frontCheck
       value: 
-      objectReference: {fileID: 948445244}
+      objectReference: {fileID: 1005203324}
     - target: {fileID: 4493956420305364983, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: startPosition
       value: 

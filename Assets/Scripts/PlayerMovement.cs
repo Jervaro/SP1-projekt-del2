@@ -143,11 +143,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveDirection.x > 0 && isFacingLeft)
         {
-            Flip();
+            FlipSpriteDirection();
         }
         else if (moveDirection.x < 0 && !isFacingLeft)
         {
-            Flip();
+            FlipSpriteDirection();
         }
 
     }// End of Move method
