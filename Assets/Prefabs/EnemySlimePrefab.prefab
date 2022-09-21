@@ -202,8 +202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8facefb6883d73c41bdabff4ae613e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2
   impulseForce: 7
+  startMovingRight: 0
   groundCheck: {fileID: 5130097466349503200}
 --- !u!114 &5130097466527227223
 MonoBehaviour:

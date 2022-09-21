@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -108,8 +109,8 @@ public class Enemy_SlimeMovement : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         Vector2 killForce = new Vector2(movementDirection, impulseForce);
         rigidBody2D.AddForce(killForce, ForceMode2D.Impulse);
-        gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, -gameObject.transform.localScale.y);
-        //gameObject.transform.Rotate(180f, 0f, 0f);
+        //gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, -gameObject.transform.localScale.y);
+        gameObject.transform.Rotate(180f, 0f, 0f);
     }
 
 }

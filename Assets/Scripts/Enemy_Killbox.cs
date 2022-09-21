@@ -18,6 +18,7 @@ public class Enemy_Killbox : MonoBehaviour
             if(collision.gameObject.GetComponent<PlayerMovement>().isFalling() == true)
             {
                 gameObject.GetComponentInParent<Enemy_SlimeMovement>().KillMe();
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }
