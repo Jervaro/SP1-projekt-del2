@@ -6,18 +6,22 @@ using UnityEngine;
 public class Enemy_SlimeMovement : MonoBehaviour
 {
     public float speed = 1f;
-    private float movementDirection = 1f;
     public float impulseForce = 4f;
     public bool startMovingRight = true;
+    public float checkRadius;
+
+    [SerializeField] private LayerMask whatIsGround;
 
     Rigidbody2D rigidBody2D;
     private Animator animator;
 
     public GameObject groundCheck;
+    public Transform frontCheck;
 
+    private float movementDirection = 1f;
     private bool isGrounded;
-
     private bool isAlive = true;
+    private bool isTouchingFront;
 
     // Start is called before the first frame update
     void Start()
@@ -38,11 +42,18 @@ public class Enemy_SlimeMovement : MonoBehaviour
 
     private void Update()
     {
+        // wall checking
+        isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, checkRadius, whatIsGround);
+        if (isTouchingFront == true)
+        {
+            ChangeDirection();
+        } 
+        // end of wallchecking
+
         animator.SetBool("IsAlive", isAlive);
         animator.SetBool("IsGrounded", isGrounded);
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (isGrounded == true && isAlive == true)
