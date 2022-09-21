@@ -17,7 +17,6 @@ public class Enemy_Killbox : MonoBehaviour
     {
         if(collision.CompareTag("Player") == true)
         {
-            Debug.Log(healthPoints);
             if(collision.gameObject.GetComponent<PlayerMovement>().isFalling() == true && healthPoints > 0)
             {
                 gameObject.GetComponentInParent<Enemy_SlimeMovement>().KillMe();
