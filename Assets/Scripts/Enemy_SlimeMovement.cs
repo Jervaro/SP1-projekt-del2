@@ -6,6 +6,7 @@ public class Enemy_SlimeMovement : MonoBehaviour
 {
     public float speed = 1f;
     private float movementDirection = 1f;
+    public float impulseForce = 4f;
 
     Rigidbody2D rigidBody2D;
     private Animator animator;
@@ -89,9 +90,10 @@ public class Enemy_SlimeMovement : MonoBehaviour
     {
         isAlive = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        Vector2 killForce = new Vector2(movementDirection, 4f);
+        Vector2 killForce = new Vector2(movementDirection, impulseForce);
         rigidBody2D.AddForce(killForce, ForceMode2D.Impulse);
         gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, -gameObject.transform.localScale.y);
+        //gameObject.transform.Rotate(180f, 0f, 0f);
     }
 
 }

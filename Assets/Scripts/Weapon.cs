@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public Transform MuzzleFlashPrefab;
 
     [SerializeField] private float timeBeforeReset;
     [SerializeField] private AudioSource audioSource;
@@ -14,6 +15,7 @@ public class Weapon : MonoBehaviour
 
     private bool canFire = true;
     private float timer = 0f;
+
 
     // Update is called once per frame
     void Update()
@@ -37,9 +39,17 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
+        // Creates the bullets and SFX
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         canFire = false;
         audioSource.PlayOneShot(audioClip);
+
+        // Creates muzzle flash
+        Transform clone = Instantiate(MuzzleFlashPrefab, firePoint.position, firePoint.rotation) as Transform;
+        clone.parent = firePoint;
+        float size = Random.Range(0.6f, 0.7f);
+        clone.localScale = new Vector3(size, size, 1);
+        Destroy(clone.gameObject, 0.05f);
     }
     
 }

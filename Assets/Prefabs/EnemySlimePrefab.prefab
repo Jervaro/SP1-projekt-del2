@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+  impulseForce: 7
   groundCheck: {fileID: 5130097466349503200}
 --- !u!114 &5130097466527227223
 MonoBehaviour:
@@ -230,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  player: {fileID: 0}
+  gameObserver: {fileID: 0}
   enemySlimeMovement: {fileID: 5130097466527227228}
 --- !u!1 &5130097466809597700
 GameObject:
