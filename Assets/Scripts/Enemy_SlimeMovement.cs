@@ -7,6 +7,7 @@ public class Enemy_SlimeMovement : MonoBehaviour
     public float speed = 1f;
     private float movementDirection = 1f;
     public float impulseForce = 4f;
+    public bool startMovingRight = true;
 
     Rigidbody2D rigidBody2D;
     private Animator animator;
@@ -20,6 +21,16 @@ public class Enemy_SlimeMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (startMovingRight)
+        {
+            movementDirection = 1f;
+        }
+        else
+        {
+            ChangeDirection();
+            movementDirection = -1f;
+        }
+
         rigidBody2D = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
