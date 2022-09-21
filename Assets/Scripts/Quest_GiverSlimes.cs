@@ -9,7 +9,7 @@ public class Quest_GiverSlimes : MonoBehaviour
     [SerializeField] private Text textComponent;
     [SerializeField] private string questBeginText;
     [SerializeField] private string questCompleteText;
-    [SerializeField] private int amountToCollect = 1;
+    [SerializeField] private int amountToKill = 1;
     [SerializeField] private GameObject doorToOpenQuestComplete;
 
     // Start is called before the first frame update
@@ -30,7 +30,7 @@ public class Quest_GiverSlimes : MonoBehaviour
     {
         if (collision.CompareTag("Player") == true)
         {
-            if (collision.GetComponent<PlayerState>().coinAmount >= amountToCollect)
+            if (collision.GetComponent<PlayerState>().killedAmount >= amountToKill)
             {
                 textComponent.text = questCompleteText;
                 collision.GetComponent<Quest_Player>().isQuestComplete = true;

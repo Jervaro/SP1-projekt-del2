@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  impulseForce: 7
+  impulseForce: 5
   startMovingRight: 0
   checkRadius: 0
   whatIsGround:

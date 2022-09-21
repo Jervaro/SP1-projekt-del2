@@ -8,6 +8,7 @@ public class PlayerState : MonoBehaviour
     public int healthPoints = 2;
     public int initialHealthPoints;
     public int coinAmount = 0;
+    public int killedAmount = 0;
 
     private GameObject respawnPosition;
     [SerializeField] private GameObject startPosition;

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameObserver : MonoBehaviour
 {
-    public int amountSlimesKilled = 0;
 
     private void Start()
     {
