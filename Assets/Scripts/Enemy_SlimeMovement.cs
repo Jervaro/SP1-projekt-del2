@@ -26,6 +26,7 @@ public class Enemy_SlimeMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         if (startMovingRight)
         {
             movementDirection = 1f;
@@ -44,7 +45,7 @@ public class Enemy_SlimeMovement : MonoBehaviour
     {
         // wall checking
         isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, checkRadius, whatIsGround);
-        if (isTouchingFront == true)
+        if (isTouchingFront == true && isAlive == true)
         {
             ChangeDirection();
         } 
