@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameObserver : MonoBehaviour
 {
+
     private void Start()
     {
         PlayerPrefs.SetInt("CoinAmount", 0);

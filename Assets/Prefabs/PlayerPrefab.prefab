@@ -438,10 +438,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1125949190166511247}
-  audioClip: {fileID: 8300000, guid: 97296b9a97ac2024e9771c638d91bc1e, type: 3}
+  audioClip: {fileID: 8300000, guid: 6f84cc88ace8ba84b85cfd2ae41566a7, type: 3}
   groundCheck: {fileID: 4493956418740590379}
   movementSpeed: 6
-  jumpForce: 6
+  jumpForce: 9
   smoothTime: 0.05
   whatIsGround:
     serializedVersion: 2
@@ -498,5 +498,5 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3266380600519652443, guid: e16118a68dcc4a44e9c03cec11806843, type: 3}
   timeBeforeReset: 0.2
   audioSource: {fileID: 1125949190166511247}
-  audioClip: {fileID: 8300000, guid: a4b5569e334bf8f47bbfcdb8c8f37cd1, type: 3}
+  audioClip: {fileID: 8300000, guid: 6f8852211af935c408a2b7cf7a82e034, type: 3}
   volume: 0.2
