@@ -95,6 +95,11 @@ public class Enemy_SlimeMovement : MonoBehaviour
         {
             ChangeDirection();
         }
+
+        if (collision.gameObject.CompareTag("Enemy") == true)
+        {
+            ChangeDirection();
+        }
     }
 
     public void KillMe()
