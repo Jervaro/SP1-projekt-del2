@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class Enemy_SlimeMovement : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private float deathVolume;
+
     public float speed = 1f;
     public float impulseForce = 4f;
     public bool startMovingRight = true;
@@ -119,6 +123,8 @@ public class Enemy_SlimeMovement : MonoBehaviour
 
     public void KillMe()
     {
+        audioSource.volume = deathVolume;
+        audioSource.PlayOneShot(audioClip);
         isAlive = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         Vector2 killForce = new Vector2(movementDirection, impulseForce);
