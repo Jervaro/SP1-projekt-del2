@@ -136,7 +136,6 @@ public class Enemy_SlimeMovement : MonoBehaviour
     
     void DestroySlime()
     {
-        Debug.Log("invokeslime");
         Destroy(gameObject);
         playerState.killedAmount++;
     }
