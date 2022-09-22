@@ -5,11 +5,13 @@ using UnityEngine;
 public class Enemy_Killbox : MonoBehaviour
 {
     GameObject gameObjectToKill;
-    private int healthPoints;
+    //private int healthPoints;
+    private bool isAlive;
 
     private void Start()
     {
-        healthPoints = gameObject.GetComponentInParent<Enemy>().health;
+        //healthPoints = gameObject.GetComponentInParent<Enemy>().health;
+        isAlive = gameObject.GetComponentInParent<Enemy_SlimeMovement>().isAlive;
         gameObjectToKill = gameObject.transform.parent.gameObject;
     }
 
@@ -17,10 +19,10 @@ public class Enemy_Killbox : MonoBehaviour
     {
         if(collision.CompareTag("Player") == true)
         {
-            if(collision.gameObject.GetComponent<PlayerMovement>().isFalling() == true && healthPoints > 0)
+            if(collision.gameObject.GetComponent<PlayerMovement>().isFalling() == true && isAlive == true)
             {
                 gameObject.GetComponentInParent<Enemy_SlimeMovement>().KillMe();
-                healthPoints = 0;
+                //healthPoints = 0;
             }
         }
     }

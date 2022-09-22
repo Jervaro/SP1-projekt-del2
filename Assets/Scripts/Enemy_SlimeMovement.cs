@@ -20,13 +20,15 @@ public class Enemy_SlimeMovement : MonoBehaviour
 
     private float movementDirection = 1f;
     private bool isGrounded;
-    private bool isAlive = true;
+    public bool isAlive = true;
     private bool isTouchingFront;
+    private PlayerState playerState;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerState = GameObject.Find("Player").GetComponent<PlayerState>();
+
         if (startMovingRight)
         {
             movementDirection = 1f;
@@ -131,6 +133,7 @@ public class Enemy_SlimeMovement : MonoBehaviour
     {
         Debug.Log("invokeslime");
         Destroy(gameObject);
+        playerState.killedAmount++;
     }
 
 }
