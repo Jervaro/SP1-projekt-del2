@@ -107693,6 +107693,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6200000, guid: 554af475f1c0b434b8596c11b8698f48, type: 2}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+      propertyPath: jumpForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: frontCheck
       value: 
       objectReference: {fileID: 1005203324}
