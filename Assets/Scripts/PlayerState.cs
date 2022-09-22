@@ -13,6 +13,9 @@ public class PlayerState : MonoBehaviour
     private GameObject respawnPosition;
     [SerializeField] private GameObject startPosition;
     [SerializeField] private bool useStartPosition = true;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private float hurtVolume;
 
 
     // Start is called before the first frame update
@@ -39,6 +42,8 @@ public class PlayerState : MonoBehaviour
 
     public void DoHarm(int doHarmByThisMuch)
     {
+        audioSource.volume = hurtVolume;
+        audioSource.PlayOneShot(audioClip);
         healthPoints -= doHarmByThisMuch;
         if(healthPoints <= 0)
         {

@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        audioSource.volume = volume;
+        
         if (Input.GetButtonDown("Fire1") && canFire == true)
         {
             Shoot();
@@ -39,6 +39,7 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
+        audioSource.volume = volume;
         // Creates the bullets and SFX
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         canFire = false;

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
+    [SerializeField] private float jumpVolume;
 
     public GameObject groundCheck;
     private bool isGrounded;
@@ -57,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) == true)
         {
+            audioSource.volume = jumpVolume;
             isJumpPressed = true;
             animator.SetTrigger("DoJump");
             if (isGrounded == true)
