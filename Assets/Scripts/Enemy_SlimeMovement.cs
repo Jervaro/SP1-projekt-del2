@@ -131,13 +131,13 @@ public class Enemy_SlimeMovement : MonoBehaviour
         rigidBody2D.AddForce(killForce, ForceMode2D.Impulse);
         gameObject.transform.localScale = new Vector3(gameObject.transform.localScale.x, -gameObject.transform.localScale.y);
 
+        playerState.killedAmount++;
         Invoke("DestroySlime", 5f);
     }
     
     void DestroySlime()
     {
         Destroy(gameObject);
-        playerState.killedAmount++;
     }
 
 }
