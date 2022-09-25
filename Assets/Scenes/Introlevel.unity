@@ -54175,6 +54175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 952431143}
   musicClip: {fileID: 8300000, guid: 7b2f69036026f7d4483c8feb1d1bb882, type: 3}
+  startVolume: 0.2
+  increaseVolumeBy: 0.0001
 --- !u!82 &952431143
 AudioSource:
   m_ObjectHideFlags: 0
@@ -110015,7 +110017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979081187}
   - component: {fileID: 1979081188}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
