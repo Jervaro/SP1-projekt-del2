@@ -4654,7 +4654,7 @@ PrefabInstance:
       objectReference: {fileID: 1113131563}
     - target: {fileID: 3677082766933207222, guid: 6b8fc64a8911b394086124e486e333a3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: LoadMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b8fc64a8911b394086124e486e333a3, type: 3}
