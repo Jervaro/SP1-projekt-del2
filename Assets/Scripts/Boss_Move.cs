@@ -5,7 +5,8 @@ using UnityEngine;
 public class Boss_Move : StateMachineBehaviour
 {
     public float speed = 5f;
-    public float attackRange = 5f;
+    public float attackRange = 2f;
+    
 
     Transform player;
     Rigidbody2D rb;
@@ -31,6 +32,7 @@ public class Boss_Move : StateMachineBehaviour
         if (Vector2.Distance(player.position, rb.position) <= attackRange)
         {
             animator.SetTrigger("Attack");
+
         }
     }
 

@@ -12,11 +12,13 @@ public class PlayerState : MonoBehaviour
     private GameObject respawnPosition;
     [SerializeField] private GameObject startPosition;
     [SerializeField] private bool useStartPosition = true;
-
+    private Scene scene;
 
     // Start is called before the first frame update
     void Start()
     {
+       scene = SceneManager.GetActiveScene();
+
         coinAmount = PlayerPrefs.GetInt("CoinAmount");
         healthPoints = initialHealthPoints;
         if(useStartPosition == true)
@@ -38,6 +40,8 @@ public class PlayerState : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
+    
     }
 
 
@@ -46,9 +50,15 @@ public class PlayerState : MonoBehaviour
         healthPoints -= doHarmByThisMuch;
         if(healthPoints <= 0)
         {
+            if(scene.name == "BossBattle")
+            {
+                SceneManager.LoadScene(3);
+            }
             Respawn();
         }
     }
+
+  
 
     public void Respawn()
     {

@@ -22,7 +22,16 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
+    
+        if(collision.CompareTag("Boss") == true)
+        {
+            BossHealth boss = collision.GetComponent<BossHealth>();
+            boss.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        
     }
+
 
     private void OnBecameInvisible()
     {

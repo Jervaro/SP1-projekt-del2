@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-	public int health = 500;
+	public int health = 1000;
 
 	public GameObject deathEffect;
 
@@ -17,9 +17,10 @@ public class BossHealth : MonoBehaviour
 
 		health -= damage;
 
-		if (health <= 200)
+		if (health <= 500)
 		{
-			GetComponent<Animator>().SetBool("IsEnraged", true);
+			GetComponent<Animator>().SetBool("IsEvolved", true);
+			gameObject.GetComponent<BossAttack>().damage = gameObject.GetComponent<BossAttack>().evolvedDamage;
 		}
 
 		if (health <= 0)
@@ -32,5 +33,6 @@ public class BossHealth : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
+
 	}
 }
