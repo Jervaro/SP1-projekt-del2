@@ -17,15 +17,11 @@ public class Pickup_Coin : MonoBehaviour
     //private float timer = 0f;
 
 
-    private void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("Player") == true)
         {
+            
             if(canPickupCoin == true)
             {
                 collision.GetComponent<PlayerState>().CoinPickup();
