@@ -16,11 +16,13 @@ public class PlayerState : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip audioClip;
     [SerializeField] private float hurtVolume;
-
+    private Scene scene;
 
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
+
         coinAmount = PlayerPrefs.GetInt("CoinAmount");
         healthPoints = initialHealthPoints;
         if(useStartPosition == true)
@@ -47,6 +49,10 @@ public class PlayerState : MonoBehaviour
         healthPoints -= doHarmByThisMuch;
         if(healthPoints <= 0)
         {
+            if(scene.name == "BossBattle")
+            {
+                SceneManager.LoadScene(3);
+            }
             Respawn();
         }
     }
