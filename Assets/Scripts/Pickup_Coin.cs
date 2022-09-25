@@ -21,6 +21,7 @@ public class Pickup_Coin : MonoBehaviour
     {
         if(collision.CompareTag("Player") == true)
         {
+            
             if(canPickupCoin == true)
             {
                 collision.GetComponent<PlayerState>().CoinPickup();
