@@ -3856,7 +3856,7 @@ PrefabInstance:
     - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: a4b5569e334bf8f47bbfcdb8c8f37cd1, type: 3}
+      objectReference: {fileID: 8300000, guid: 6f8852211af935c408a2b7cf7a82e034, type: 3}
     - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: audioSource
       value: 
@@ -5719,6 +5719,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1770408419}
   musicClip: {fileID: 8300000, guid: 8e7d5c3c321d6b24b95e9392bdff0d66, type: 3}
+  startVolume: 0.02
+  increaseVolumeBy: 0.0001
 --- !u!82 &1770408419
 AudioSource:
   m_ObjectHideFlags: 0
