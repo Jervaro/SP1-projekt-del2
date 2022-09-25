@@ -3851,7 +3851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: volume
-      value: 2
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1552540877, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: audioClip
@@ -3925,6 +3925,10 @@ PrefabInstance:
       propertyPath: frontCheck
       value: 
       objectReference: {fileID: 533787672}
+    - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
+      propertyPath: jumpVolume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4493956420305364977, guid: 13892400b730de844b23c24308c3fcb9, type: 3}
       propertyPath: xWallForce
       value: 10
