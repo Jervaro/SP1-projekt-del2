@@ -11,8 +11,12 @@ public class Enemy_Killbox : MonoBehaviour
     private void Start()
     {
         //healthPoints = gameObject.GetComponentInParent<Enemy>().health;
-        isAlive = gameObject.GetComponentInParent<Enemy_SlimeMovement>().isAlive;
         gameObjectToKill = gameObject.transform.parent.gameObject;
+    }
+
+    private void Update()
+    {
+        isAlive = gameObject.GetComponentInParent<Enemy_SlimeMovement>().isAlive;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

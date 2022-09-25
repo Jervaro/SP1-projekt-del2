@@ -5017,4 +5017,5 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5509334208655402403}
   audioSource: {fileID: 5509334208788676226}
   pickupClip: {fileID: 8300000, guid: d1cc7789ed41d314d8ce083d3e735ed0, type: 3}
-  timeBeforeDeletion: 5
+  coinPrefab: {fileID: 5509334208655402414}
+  timeBeforeDeletion: 1
